@@ -18,7 +18,7 @@ const menu = [
       { name: 'Green Tea', description: 'Fresh, grassy, and revitalizing.' },
       { name: 'Mint Tea', description: 'Host does not recommend' },
       { name: 'Chamomile Tea', description: 'Soothing, floral, and calming.' },
-      { name: 'Black Tea', description: 'Robust, classic, and energizing.' },
+      { name: '(Normal) Tea', description: 'Robust, classic, and energizing.' },
     ]
   },
   {
