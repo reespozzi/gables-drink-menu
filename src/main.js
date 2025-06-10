@@ -9,7 +9,7 @@ const menu = [
       { name: 'Flat White', description: 'Velvety espresso with steamed milk (Recommended)' },
       { name: 'Latte', description: 'Higher milk:coffee ratio than Flat White!' },
       { name: 'Americano', description: 'Straight up hot black coffee.' },
-      { name: 'Espresso', description: 'Rich, intense shot of coffee.' },
+      { name: 'Espresso', description: 'Rich, intense shot of coffee (36g)' },
       { name: 'Chemex', description: 'Clean, bright filter coffee.' },
     ]
   },
