@@ -3,11 +3,12 @@ import './style.css'
 const menu = [
   {
     category: 'Coffee',
-    description: '<span class="bean-label">Current Bean:</span> Single origin Ethiopia, notes of citrus and floral.<br><span class="bean-label">Supplier:</span> Dark Arts',
+    description: '<span class="bean-label">Current Bean:</span>Indonesia (Process: Anaerobic Honey). Tasting notes: Clove, Oolong Tea, Roasted Walnut.<br><span class="bean-label">Supplier:</span> Dark Arts',
     drinks: [
       { name: 'Cortado', description: 'Minimum milk, maximum espresso.' },
       { name: 'Flat White', description: 'Velvety espresso with steamed milk (Recommended)' },
       { name: 'Latte', description: 'Higher milk:coffee ratio than Flat White!' },
+      { name: 'Americano', description: 'Straight up hot black coffee.' },
       { name: 'Espresso', description: 'Rich, intense shot of coffee.' },
       { name: 'Chemex', description: 'Clean, bright filter coffee.' },
     ]
