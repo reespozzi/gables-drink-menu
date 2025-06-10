@@ -1,4 +1,5 @@
 # Drinks Menu Web App
+Thanks CoPilot 😁
 
 Home Cafe drinks menu built with Vite and vanilla JavaScript. Features a bold, accessible design and a QR code for easy access.
 
