@@ -3,7 +3,7 @@ import './style.css'
 const menu = [
   {
     category: 'Coffee',
-    description: '<span class="bean-label">Current Bean:</span> Single origin Ethiopia, notes of citrus and floral.<br><span class="bean-label">Supplier:</span> Assembly Coffee.',
+    description: '<span class="bean-label">Current Bean:</span> Single origin Ethiopia, notes of citrus and floral.<br><span class="bean-label">Supplier:</span> Dark Arts',
     drinks: [
       { name: 'Cortado', description: 'Minimum milk, maximum espresso.' },
       { name: 'Flat White', description: 'Velvety espresso with steamed milk (Recommended)' },
@@ -36,67 +36,34 @@ const menu = [
 ];
 
 const app = document.querySelector('#app');
-
-const main = document.createElement('main');
-main.className = 'brutalist-container';
-
-// Header
-const header = document.createElement('header');
-const title = document.createElement('h1');
-title.className = 'classy-title';
-title.textContent = 'Gables Drink Menu';
-header.appendChild(title);
-main.appendChild(header);
-
-// Menu List
-const menuSection = document.createElement('section');
-menuSection.className = 'menu-list';
-menu.forEach(({ category, description, drinks }) => {
-  const details = document.createElement('details');
-  details.className = 'menu-section';
-  const summary = document.createElement('summary');
-  summary.className = 'menu-section-title';
-  summary.textContent = category;
-  details.appendChild(summary);
-  if (description) {
-    const desc = document.createElement('div');
-    desc.className = 'section-desc';
-    desc.innerHTML = description;
-    details.appendChild(desc);
-  }
-  const drinksDiv = document.createElement('div');
-  drinksDiv.className = 'section-drinks';
-  drinks.forEach(drink => {
-    const item = document.createElement('div');
-    item.className = 'menu-item';
-    const h2 = document.createElement('h2');
-    h2.textContent = drink.name;
-    const p = document.createElement('p');
-    p.textContent = drink.description;
-    item.appendChild(h2);
-    item.appendChild(p);
-    drinksDiv.appendChild(item);
-  });
-  details.appendChild(drinksDiv);
-  menuSection.appendChild(details);
-});
-main.appendChild(menuSection);
-
-// Disclaimer
-const disclaimer = document.createElement('section');
-disclaimer.className = 'disclaimer';
-const disclaimerP = document.createElement('p');
-disclaimerP.textContent = 'All drinks accept variations upon request and depending on host mood';
-const sweetenerList = document.createElement('ul');
-sweetenerList.className = 'sweetener-list';
-['White sugar', 'Brown sugar', 'Honey'].forEach(sweetener => {
-  const li = document.createElement('li');
-  li.textContent = sweetener;
-  sweetenerList.appendChild(li);
-});
-disclaimer.appendChild(disclaimerP);
-disclaimer.appendChild(sweetenerList);
-main.appendChild(disclaimer);
-
-app.innerHTML = '';
-app.appendChild(main);
+app.innerHTML = `
+  <main class="brutalist-container">
+    <header>
+      <h1 class="classy-title">Gables Drink Menu</h1>
+    </header>
+    <section class="menu-list">
+      ${menu.map(({category, description, drinks}) => `
+        <details class="menu-section">
+          <summary class="menu-section-title">${category}</summary>
+          ${description ? `<div class="section-desc">${description}</div>` : ''}
+          <div class="section-drinks">
+            ${drinks.map(drink => `
+              <div class="menu-item">
+                <h2>${drink.name}</h2>
+                <p>${drink.description}</p>
+              </div>
+            `).join('')}
+          </div>
+        </details>
+      `).join('')}
+    </section>
+    <section class="disclaimer">
+      <p>All drinks accept variations upon request and depending on host mood</p>
+      <ul class="sweetener-list">
+        <li>White sugar</li>
+        <li>Brown sugar</li>
+        <li>Honey</li>
+      </ul>
+    </section>
+  </main>
+`;
