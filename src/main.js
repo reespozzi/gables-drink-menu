@@ -32,6 +32,8 @@ const menu = [
     category: 'Soft Drinks',
     drinks: [
       { name: 'Water', description: 'Still, always refreshing.' },
+      { name: 'Fresh OJ', description: 'Freshly Squeezed.' },
+      { name: 'Apple Juice', description: 'Crisp.' },
     ]
   }
 ];
