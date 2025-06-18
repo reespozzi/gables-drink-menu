@@ -3,7 +3,7 @@ import './style.css'
 const menu = [
   {
     category: 'Coffee',
-    description: '<span class="bean-label">Current Bean:</span>Indonesia (Process: Anaerobic Honey). Tasting notes: Clove, Oolong Tea, Roasted Walnut.<br><span class="bean-label">Supplier:</span> Dark Arts',
+    description: '<span class="bean-label">Current Bean:</span>Brazil (Process: Assisted Fermentation). Tasting notes: Blackberry + Strawberry + Floral.<br><span class="bean-label">Supplier:</span> Assembly',
     drinks: [
       { name: 'Cortado', description: 'Minimum milk, maximum espresso.' },
       { name: 'Flat White', description: 'Velvety espresso with steamed milk (Recommended)' },
