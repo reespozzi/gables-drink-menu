@@ -3,11 +3,10 @@ import './style.css'
 const menu = [
   {
     category: 'Coffee',
-    description: '<span class="bean-label">Current Bean:</span>Papa New Guinea (Process: Washed). Tasting notes: Cranberry, Cashew, Chocolate.<br><span class="bean-label">Supplier:</span> Assembly',
+    description: '<span class="bean-label">Current Bean:</span>Papa New Guinea (Process: Washed). Tasting notes: Cranberry, Cashew, Chocolate.<br><span class="bean-label">Supplier:</span> Dark Arts',
     drinks: [
       { name: 'Cortado', description: 'Minimum milk, maximum espresso.' },
       { name: 'Flat White', description: 'Velvety espresso with steamed milk (Recommended)' },
-      { name: 'Latte', description: 'Higher milk:coffee ratio than Flat White!' },
       { name: 'Americano', description: 'Straight up hot black coffee.' },
       { name: 'Espresso', description: 'Rich, intense shot of coffee (36g)' },
       { name: 'Chemex', description: 'Clean, bright filter coffee.' },
@@ -33,7 +32,6 @@ const menu = [
     drinks: [
       { name: 'Water', description: 'Still, always refreshing.' },
       { name: 'Fresh OJ', description: 'Freshly Squeezed.' },
-      { name: 'Apple Juice', description: 'Crisp.' },
     ]
   }
 ];
